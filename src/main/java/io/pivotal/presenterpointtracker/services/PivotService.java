@@ -21,6 +21,7 @@ public class PivotService {
         return this.pivotRepository.findAll();
     }
 
+    public Pivot getPivot(long pivotId){ return this.pivotRepository.findOne(pivotId); }
 
     public void updateUser( Pivot pivot ){
         this.pivotRepository.save(pivot);

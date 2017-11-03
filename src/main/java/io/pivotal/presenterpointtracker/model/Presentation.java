@@ -1,14 +1,12 @@
 package io.pivotal.presenterpointtracker.model;
 
-import com.fasterxml.jackson.databind.jsonschema.JsonSerializableSchema;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@JsonSerializableSchema
 public class Presentation {
 
     @Id

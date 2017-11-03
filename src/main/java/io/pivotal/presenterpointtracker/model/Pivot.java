@@ -11,27 +11,29 @@ import javax.validation.constraints.NotNull;
 public class Pivot {
 
     @Id
-    long userId;
+    long id;
 
     @NotNull
     String userName;
+
+
 
     long score = 0;
 
     public Pivot() {
     }
 
-    public Pivot(long userId, String userName) {
-        this.userId = userId;
+    public Pivot(long id, String userName) {
+        this.id = id;
         this.userName = userName;
     }
 
-    public long getUserId() {
-        return userId;
+    public long getId() {
+        return id;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getUserName() {

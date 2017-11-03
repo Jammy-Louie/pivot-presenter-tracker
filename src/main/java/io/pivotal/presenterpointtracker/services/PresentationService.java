@@ -21,9 +21,8 @@ public class PresentationService {
         return this.presentationRepository.findAll();
     }
 
-
     public Presentation getPresentation(long id){
-        return this.presentationRepository.getOne(id);
+        return this.presentationRepository.findOne(id);
     }
 
     public void savePresentation(Presentation presentation){
